@@ -22,6 +22,9 @@
                                     <constraint firstAttribute="height" constant="31" id="DEd-DS-QHL"/>
                                 </constraints>
                                 <state key="normal" image="restart"/>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odE-NW-5n7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs8-ya-KnP">
                                 <rect key="frame" x="35" y="817" width="32" height="35"/>
@@ -30,10 +33,13 @@
                                     <constraint firstAttribute="height" constant="35" id="mKj-SX-YXT"/>
                                 </constraints>
                                 <state key="normal" image="left-arrow"/>
+                                <connections>
+                                    <action selector="leftArrowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4C-lg-ILS"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-dQ-GT1">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-dQ-GT1" customClass="KolodaView" customModule="Google_Primer_Mock" customModuleProvider="target">
                                 <rect key="frame" x="30" y="209.5" width="354" height="477"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LMA-dQ-GT1" secondAttribute="height" multiplier="118:159" id="mSO-zb-aou"/>
                                 </constraints>
@@ -52,6 +58,9 @@
                                     <constraint firstAttribute="height" constant="35" id="v01-Vm-Imp"/>
                                 </constraints>
                                 <state key="normal" image="right-arrow"/>
+                                <connections>
+                                    <action selector="rightArrowPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="590-ZQ-LWw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2797689438" green="0.62092328070000002" blue="0.52548283340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -71,6 +80,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardsKolodaView" destination="LMA-dQ-GT1" id="SUm-jR-ixU"/>
+                        <outlet property="leftArrowButton" destination="xs8-ya-KnP" id="YW2-ND-hfN"/>
+                        <outlet property="pageControlView" destination="YdS-Yk-ab9" id="tYa-jQ-l4x"/>
+                        <outlet property="restartButton" destination="5wK-5L-veL" id="93S-7Z-Gsa"/>
+                        <outlet property="rightArrowButton" destination="LIQ-Y2-089" id="ZTr-Yq-Rfm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
