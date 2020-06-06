@@ -10,6 +10,7 @@
 		A38B2267F41429CEC3EE312D /* Pods_Google_Primer_MockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D1A048C3377ED3290F4 /* Pods_Google_Primer_MockTests.framework */; };
 		E553E234248C38D80019A9FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E233248C38D80019A9FE /* HomeViewModel.swift */; };
 		E553E237248C39EC0019A9FE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E236248C39EC0019A9FE /* Card.swift */; };
+		E553E239248C3ED30019A9FE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E238248C3ED30019A9FE /* CardView.swift */; };
 		E5671D0D248C28F5009676A3 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D06248C28F5009676A3 /* DraggableCardView.swift */; };
 		E5671D0E248C28F5009676A3 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D07248C28F5009676A3 /* KolodaView.swift */; };
 		E5671D0F248C28F5009676A3 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */; };
@@ -51,6 +52,7 @@
 		84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Primer_Mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E553E233248C38D80019A9FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E553E236248C39EC0019A9FE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E553E238248C3ED30019A9FE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E5671D06248C28F5009676A3 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 		E5671D07248C28F5009676A3 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
 		E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeResultDirection.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				E5C28B6F248BDACA0058E01D /* Storyboards */,
+				E553E238248C3ED30019A9FE /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E553E239248C3ED30019A9FE /* CardView.swift in Sources */,
 				E5671D11248C28F5009676A3 /* KolodaAnimationSemaphore.swift in Sources */,
 				E5671D12248C28F5009676A3 /* KolodaCardStorage.swift in Sources */,
 				E5671D0D248C28F5009676A3 /* DraggableCardView.swift in Sources */,
