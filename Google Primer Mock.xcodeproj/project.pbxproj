@@ -63,7 +63,6 @@
 		E5C28B3D248BD9910058E01D = {
 			isa = PBXGroup;
 			children = (
-				E5C28B70248BDB390058E01D /* Default-568h@2x.png */,
 				E5C28B48248BD9910058E01D /* Google Primer Mock */,
 				E5C28B5F248BD9930058E01D /* Google Primer MockTests */,
 				E5C28B47248BD9910058E01D /* Products */,
@@ -119,6 +118,7 @@
 		E5C28B6D248BDA440058E01D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E5C28B70248BDB390058E01D /* Default-568h@2x.png */,
 				E5C28B57248BD9930058E01D /* Info.plist */,
 				E5C28B52248BD9930058E01D /* Assets.xcassets */,
 			);
