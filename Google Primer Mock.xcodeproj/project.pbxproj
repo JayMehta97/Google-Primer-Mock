@@ -207,6 +207,7 @@
 				E5C28B44248BD9910058E01D /* Resources */,
 				E5C28B77248BE0740058E01D /* SwiftLint */,
 				E5C28B78248BE8050058E01D /* SwiftGen */,
+				11F5F727FADCE26EC2A420ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,6 +300,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		11F5F727FADCE26EC2A420ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Primer Mock/Pods-Google Primer Mock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google Primer Mock/Pods-Google Primer Mock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google Primer Mock/Pods-Google Primer Mock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		30376A14AF73B1CCD6C32CBE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
