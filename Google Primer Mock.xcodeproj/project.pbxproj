@@ -14,6 +14,7 @@
 		E5C28B53248BD9930058E01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B52248BD9930058E01D /* Assets.xcassets */; };
 		E5C28B56248BD9930058E01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B54248BD9930058E01D /* LaunchScreen.storyboard */; };
 		E5C28B61248BD9930058E01D /* Google_Primer_MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B60248BD9930058E01D /* Google_Primer_MockTests.swift */; };
+		E5C28B71248BDB390058E01D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B70248BDB390058E01D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E5C28B5C248BD9930058E01D /* Google Primer MockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Google Primer MockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C28B60248BD9930058E01D /* Google_Primer_MockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google_Primer_MockTests.swift; sourceTree = "<group>"; };
 		E5C28B62248BD9930058E01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C28B70248BDB390058E01D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		E5C28B3D248BD9910058E01D = {
 			isa = PBXGroup;
 			children = (
+				E5C28B70248BDB390058E01D /* Default-568h@2x.png */,
 				E5C28B48248BD9910058E01D /* Google Primer Mock */,
 				E5C28B5F248BD9930058E01D /* Google Primer MockTests */,
 				E5C28B47248BD9910058E01D /* Products */,
@@ -79,13 +82,10 @@
 		E5C28B48248BD9910058E01D /* Google Primer Mock */ = {
 			isa = PBXGroup;
 			children = (
-				E5C28B49248BD9910058E01D /* AppDelegate.swift */,
-				E5C28B4B248BD9910058E01D /* SceneDelegate.swift */,
-				E5C28B4D248BD9910058E01D /* ViewController.swift */,
-				E5C28B4F248BD9910058E01D /* Main.storyboard */,
-				E5C28B52248BD9930058E01D /* Assets.xcassets */,
-				E5C28B54248BD9930058E01D /* LaunchScreen.storyboard */,
-				E5C28B57248BD9930058E01D /* Info.plist */,
+				E5C28B6E248BDA690058E01D /* View */,
+				E5C28B6D248BDA440058E01D /* Resources */,
+				E5C28B6C248BDA310058E01D /* Generated */,
+				E5C28B6B248BDA140058E01D /* Controllers */,
 			);
 			path = "Google Primer Mock";
 			sourceTree = "<group>";
@@ -97,6 +97,49 @@
 				E5C28B62248BD9930058E01D /* Info.plist */,
 			);
 			path = "Google Primer MockTests";
+			sourceTree = "<group>";
+		};
+		E5C28B6B248BDA140058E01D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5C28B4D248BD9910058E01D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E5C28B6C248BDA310058E01D /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				E5C28B49248BD9910058E01D /* AppDelegate.swift */,
+				E5C28B4B248BD9910058E01D /* SceneDelegate.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		E5C28B6D248BDA440058E01D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5C28B57248BD9930058E01D /* Info.plist */,
+				E5C28B52248BD9930058E01D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5C28B6E248BDA690058E01D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5C28B6F248BDACA0058E01D /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5C28B6F248BDACA0058E01D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E5C28B54248BD9930058E01D /* LaunchScreen.storyboard */,
+				E5C28B4F248BD9910058E01D /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5C28B56248BD9930058E01D /* LaunchScreen.storyboard in Resources */,
+				E5C28B71248BDB390058E01D /* Default-568h@2x.png in Resources */,
 				E5C28B53248BD9930058E01D /* Assets.xcassets in Resources */,
 				E5C28B51248BD9910058E01D /* Main.storyboard in Resources */,
 			);
@@ -364,7 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M23Q7YJYU2;
-				INFOPLIST_FILE = "Google Primer Mock/Info.plist";
+				INFOPLIST_FILE = "Google Primer Mock/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M23Q7YJYU2;
-				INFOPLIST_FILE = "Google Primer Mock/Info.plist";
+				INFOPLIST_FILE = "Google Primer Mock/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
