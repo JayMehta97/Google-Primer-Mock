@@ -18,10 +18,14 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var leftArrowButton: UIButton!
     @IBOutlet private weak var rightArrowButton: UIButton!
 
+    // MARK: - Variable declaration
+
+    let homeVM = HomeViewModel()
+
     // MARK: - System Preference Methods
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        return homeVM.preferredStatusBarStyle
     }
 
     // MARK: - Lifecycle Methods
