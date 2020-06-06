@@ -1,0 +1,6 @@
+framework module Pods_Google_Primer_MockTests {
+  umbrella header "Pods-Google Primer MockTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
