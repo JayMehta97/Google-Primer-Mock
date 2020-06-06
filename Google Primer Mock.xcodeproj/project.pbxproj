@@ -16,6 +16,8 @@
 		E5C28B56248BD9930058E01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B54248BD9930058E01D /* LaunchScreen.storyboard */; };
 		E5C28B61248BD9930058E01D /* Google_Primer_MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B60248BD9930058E01D /* Google_Primer_MockTests.swift */; };
 		E5C28B71248BDB390058E01D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B70248BDB390058E01D /* Default-568h@2x.png */; };
+		E5C28B74248BDFB00058E01D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B73248BDFB00058E01D /* Podfile */; };
+		E5C28B76248BE0160058E01D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B75248BE0160058E01D /* .swiftlint.yml */; };
 		EC37CB8BCF90A387F8A8EB81 /* Pods_Google_Primer_Mock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		E5C28B60248BD9930058E01D /* Google_Primer_MockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google_Primer_MockTests.swift; sourceTree = "<group>"; };
 		E5C28B62248BD9930058E01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5C28B70248BDB390058E01D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E5C28B73248BDFB00058E01D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		E5C28B75248BE0160058E01D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		E5C28B48248BD9910058E01D /* Google Primer Mock */ = {
 			isa = PBXGroup;
 			children = (
+				E5C28B72248BDF9A0058E01D /* Supporting Files */,
 				E5C28B6E248BDA690058E01D /* View */,
 				E5C28B6D248BDA440058E01D /* Resources */,
 				E5C28B6C248BDA310058E01D /* Generated */,
@@ -163,6 +168,15 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		E5C28B72248BDF9A0058E01D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5C28B73248BDFB00058E01D /* Podfile */,
+				E5C28B75248BE0160058E01D /* .swiftlint.yml */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		ED2B045836E4C27AF48501BA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +185,6 @@
 				7ADA90329AEF119C223DB252 /* Pods-Google Primer MockTests.debug.xcconfig */,
 				50D1E579A41B2060A68B2AA3 /* Pods-Google Primer MockTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -186,6 +199,7 @@
 				E5C28B42248BD9910058E01D /* Sources */,
 				E5C28B43248BD9910058E01D /* Frameworks */,
 				E5C28B44248BD9910058E01D /* Resources */,
+				E5C28B77248BE0740058E01D /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -258,6 +272,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C28B76248BE0160058E01D /* .swiftlint.yml in Resources */,
+				E5C28B74248BDFB00058E01D /* Podfile in Resources */,
 				E5C28B56248BD9930058E01D /* LaunchScreen.storyboard in Resources */,
 				E5C28B71248BDB390058E01D /* Default-568h@2x.png in Resources */,
 				E5C28B53248BD9930058E01D /* Assets.xcassets in Resources */,
@@ -318,6 +334,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E5C28B77248BE0740058E01D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f \"${PODS_ROOT}/SwiftLint/swiftlint\" ]; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint pod not found. Add pod 'SwiftLint' to the Podfile and install the pod or remove the SwiftLint build phase script.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
