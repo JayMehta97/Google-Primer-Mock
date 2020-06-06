@@ -3,11 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A38B2267F41429CEC3EE312D /* Pods_Google_Primer_MockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D1A048C3377ED3290F4 /* Pods_Google_Primer_MockTests.framework */; };
+		E5671D0D248C28F5009676A3 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D06248C28F5009676A3 /* DraggableCardView.swift */; };
+		E5671D0E248C28F5009676A3 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D07248C28F5009676A3 /* KolodaView.swift */; };
+		E5671D0F248C28F5009676A3 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */; };
+		E5671D10248C28F5009676A3 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D09248C28F5009676A3 /* OverlayView.swift */; };
+		E5671D11248C28F5009676A3 /* KolodaAnimationSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D0A248C28F5009676A3 /* KolodaAnimationSemaphore.swift */; };
+		E5671D12248C28F5009676A3 /* KolodaCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D0B248C28F5009676A3 /* KolodaCardStorage.swift */; };
+		E5671D13248C28F5009676A3 /* KolodaViewAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D0C248C28F5009676A3 /* KolodaViewAnimatior.swift */; };
 		E5C28B4A248BD9910058E01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B49248BD9910058E01D /* AppDelegate.swift */; };
 		E5C28B4C248BD9910058E01D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B4B248BD9910058E01D /* SceneDelegate.swift */; };
 		E5C28B4E248BD9910058E01D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B4D248BD9910058E01D /* HomeViewController.swift */; };
@@ -40,6 +47,13 @@
 		50D1E579A41B2060A68B2AA3 /* Pods-Google Primer MockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Primer MockTests.release.xcconfig"; path = "Target Support Files/Pods-Google Primer MockTests/Pods-Google Primer MockTests.release.xcconfig"; sourceTree = "<group>"; };
 		7ADA90329AEF119C223DB252 /* Pods-Google Primer MockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Primer MockTests.debug.xcconfig"; path = "Target Support Files/Pods-Google Primer MockTests/Pods-Google Primer MockTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Primer_Mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5671D06248C28F5009676A3 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
+		E5671D07248C28F5009676A3 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
+		E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeResultDirection.swift; sourceTree = "<group>"; };
+		E5671D09248C28F5009676A3 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		E5671D0A248C28F5009676A3 /* KolodaAnimationSemaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaAnimationSemaphore.swift; sourceTree = "<group>"; };
+		E5671D0B248C28F5009676A3 /* KolodaCardStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaCardStorage.swift; sourceTree = "<group>"; };
+		E5671D0C248C28F5009676A3 /* KolodaViewAnimatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaViewAnimatior.swift; sourceTree = "<group>"; };
 		E5C28B46248BD9910058E01D /* Google Primer Mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Primer Mock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C28B49248BD9910058E01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C28B4B248BD9910058E01D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +101,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E5671D04248C27D6009676A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5671D05248C27EB009676A3 /* Koloda */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5671D05248C27EB009676A3 /* Koloda */ = {
+			isa = PBXGroup;
+			children = (
+				E5671D06248C28F5009676A3 /* DraggableCardView.swift */,
+				E5671D0A248C28F5009676A3 /* KolodaAnimationSemaphore.swift */,
+				E5671D0B248C28F5009676A3 /* KolodaCardStorage.swift */,
+				E5671D07248C28F5009676A3 /* KolodaView.swift */,
+				E5671D0C248C28F5009676A3 /* KolodaViewAnimatior.swift */,
+				E5671D09248C28F5009676A3 /* OverlayView.swift */,
+				E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */,
+			);
+			path = Koloda;
+			sourceTree = "<group>";
+		};
 		E5C28B3D248BD9910058E01D = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +146,7 @@
 		E5C28B48248BD9910058E01D /* Google Primer Mock */ = {
 			isa = PBXGroup;
 			children = (
+				E5671D04248C27D6009676A3 /* Frameworks */,
 				E5C28B72248BDF9A0058E01D /* Supporting Files */,
 				E5C28B6E248BDA690058E01D /* View */,
 				E5C28B6D248BDA440058E01D /* Resources */,
@@ -404,9 +441,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5671D11248C28F5009676A3 /* KolodaAnimationSemaphore.swift in Sources */,
+				E5671D12248C28F5009676A3 /* KolodaCardStorage.swift in Sources */,
+				E5671D0D248C28F5009676A3 /* DraggableCardView.swift in Sources */,
+				E5671D10248C28F5009676A3 /* OverlayView.swift in Sources */,
 				E5E14DCD248BEEBF000931F5 /* AssetCatalog.swift in Sources */,
+				E5671D0E248C28F5009676A3 /* KolodaView.swift in Sources */,
+				E5671D0F248C28F5009676A3 /* SwipeResultDirection.swift in Sources */,
 				E5C28B4E248BD9910058E01D /* HomeViewController.swift in Sources */,
 				E5C28B4A248BD9910058E01D /* AppDelegate.swift in Sources */,
+				E5671D13248C28F5009676A3 /* KolodaViewAnimatior.swift in Sources */,
 				E5C28B4C248BD9910058E01D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
