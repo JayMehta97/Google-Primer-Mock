@@ -15,6 +15,7 @@
 		E5671D11248C28F5009676A3 /* KolodaAnimationSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D0A248C28F5009676A3 /* KolodaAnimationSemaphore.swift */; };
 		E5671D12248C28F5009676A3 /* KolodaCardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D0B248C28F5009676A3 /* KolodaCardStorage.swift */; };
 		E5671D13248C28F5009676A3 /* KolodaViewAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D0C248C28F5009676A3 /* KolodaViewAnimatior.swift */; };
+		E5671D19248C2F19009676A3 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E5671D18248C2F19009676A3 /* .swiftlint.yml */; };
 		E5C28B4A248BD9910058E01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B49248BD9910058E01D /* AppDelegate.swift */; };
 		E5C28B4C248BD9910058E01D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B4B248BD9910058E01D /* SceneDelegate.swift */; };
 		E5C28B4E248BD9910058E01D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B4D248BD9910058E01D /* HomeViewController.swift */; };
@@ -24,7 +25,6 @@
 		E5C28B61248BD9930058E01D /* Google_Primer_MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B60248BD9930058E01D /* Google_Primer_MockTests.swift */; };
 		E5C28B71248BDB390058E01D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B70248BDB390058E01D /* Default-568h@2x.png */; };
 		E5C28B74248BDFB00058E01D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B73248BDFB00058E01D /* Podfile */; };
-		E5C28B76248BE0160058E01D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B75248BE0160058E01D /* .swiftlint.yml */; };
 		E5E14DCB248BEC30000931F5 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = E5E14DCA248BEC30000931F5 /* swiftgen.yml */; };
 		E5E14DCD248BEEBF000931F5 /* AssetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E14DCC248BEEBF000931F5 /* AssetCatalog.swift */; };
 		EC37CB8BCF90A387F8A8EB81 /* Pods_Google_Primer_Mock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */; };
@@ -54,6 +54,7 @@
 		E5671D0A248C28F5009676A3 /* KolodaAnimationSemaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaAnimationSemaphore.swift; sourceTree = "<group>"; };
 		E5671D0B248C28F5009676A3 /* KolodaCardStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaCardStorage.swift; sourceTree = "<group>"; };
 		E5671D0C248C28F5009676A3 /* KolodaViewAnimatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaViewAnimatior.swift; sourceTree = "<group>"; };
+		E5671D18248C2F19009676A3 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		E5C28B46248BD9910058E01D /* Google Primer Mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Primer Mock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C28B49248BD9910058E01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C28B4B248BD9910058E01D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		E5C28B62248BD9930058E01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5C28B70248BDB390058E01D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E5C28B73248BDFB00058E01D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
-		E5C28B75248BE0160058E01D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E5E14DCA248BEC30000931F5 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		E5E14DCC248BEEBF000931F5 /* AssetCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetCatalog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,9 +213,9 @@
 		E5C28B72248BDF9A0058E01D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5671D18248C2F19009676A3 /* .swiftlint.yml */,
 				E5E14DCA248BEC30000931F5 /* swiftgen.yml */,
 				E5C28B73248BDFB00058E01D /* Podfile */,
-				E5C28B75248BE0160058E01D /* .swiftlint.yml */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -317,10 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5C28B76248BE0160058E01D /* .swiftlint.yml in Resources */,
 				E5E14DCB248BEC30000931F5 /* swiftgen.yml in Resources */,
 				E5C28B74248BDFB00058E01D /* Podfile in Resources */,
 				E5C28B56248BD9930058E01D /* LaunchScreen.storyboard in Resources */,
+				E5671D19248C2F19009676A3 /* .swiftlint.yml in Resources */,
 				E5C28B71248BDB390058E01D /* Default-568h@2x.png in Resources */,
 				E5C28B53248BD9930058E01D /* Assets.xcassets in Resources */,
 				E5C28B51248BD9910058E01D /* Home.storyboard in Resources */,
@@ -622,7 +622,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jaymehta.Google-Primer-Mock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -641,7 +641,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "jaymehta.Google-Primer-Mock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

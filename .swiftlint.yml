@@ -1,5 +1,6 @@
 excluded:
   - Pods
+  - Google Primer Mock/Frameworks
 
 force_try:
   severity: warning

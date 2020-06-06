@@ -6,8 +6,8 @@
 //  Copyright © 2020 Jay Mehta. All rights reserved.
 //
 
-import XCTest
 @testable import Google_Primer_Mock
+import XCTest
 
 // swiftlint:disable type_name
 class Google_Primer_MockTests: XCTestCase {
