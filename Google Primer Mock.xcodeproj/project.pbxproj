@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A38B2267F41429CEC3EE312D /* Pods_Google_Primer_MockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D1A048C3377ED3290F4 /* Pods_Google_Primer_MockTests.framework */; };
 		E553E234248C38D80019A9FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E233248C38D80019A9FE /* HomeViewModel.swift */; };
+		E553E237248C39EC0019A9FE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E236248C39EC0019A9FE /* Card.swift */; };
 		E5671D0D248C28F5009676A3 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D06248C28F5009676A3 /* DraggableCardView.swift */; };
 		E5671D0E248C28F5009676A3 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D07248C28F5009676A3 /* KolodaView.swift */; };
 		E5671D0F248C28F5009676A3 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */; };
@@ -49,6 +50,7 @@
 		7ADA90329AEF119C223DB252 /* Pods-Google Primer MockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Primer MockTests.debug.xcconfig"; path = "Target Support Files/Pods-Google Primer MockTests/Pods-Google Primer MockTests.debug.xcconfig"; sourceTree = "<group>"; };
 		84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Primer_Mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E553E233248C38D80019A9FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E553E236248C39EC0019A9FE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E5671D06248C28F5009676A3 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 		E5671D07248C28F5009676A3 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
 		E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeResultDirection.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		E553E235248C395A0019A9FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E553E236248C39EC0019A9FE /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E5671D04248C27D6009676A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		E5C28B48248BD9910058E01D /* Google Primer Mock */ = {
 			isa = PBXGroup;
 			children = (
+				E553E235248C395A0019A9FE /* Models */,
 				E553E232248C38C80019A9FE /* ViewModels */,
 				E5671D04248C27D6009676A3 /* Frameworks */,
 				E5C28B72248BDF9A0058E01D /* Supporting Files */,
@@ -456,6 +467,7 @@
 				E5671D12248C28F5009676A3 /* KolodaCardStorage.swift in Sources */,
 				E5671D0D248C28F5009676A3 /* DraggableCardView.swift in Sources */,
 				E5671D10248C28F5009676A3 /* OverlayView.swift in Sources */,
+				E553E237248C39EC0019A9FE /* Card.swift in Sources */,
 				E5E14DCD248BEEBF000931F5 /* AssetCatalog.swift in Sources */,
 				E5671D0E248C28F5009676A3 /* KolodaView.swift in Sources */,
 				E5671D0F248C28F5009676A3 /* SwipeResultDirection.swift in Sources */,

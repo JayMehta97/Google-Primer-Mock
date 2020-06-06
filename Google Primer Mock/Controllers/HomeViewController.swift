@@ -40,12 +40,15 @@ class HomeViewController: UIViewController {
     // MARK: - User interaction methods
 
     @IBAction private func restartButtonPressed(_ sender: UIButton) {
+        cardsKolodaView.resetCurrentCardIndex()
     }
 
     @IBAction private func leftArrowButtonPressed(_ sender: UIButton) {
+        cardsKolodaView.revertAction()
     }
 
     @IBAction private func rightArrowPressed(_ sender: UIButton) {
+        cardsKolodaView.swipe(.up, force: false)
     }
 
 }
@@ -54,7 +57,7 @@ extension HomeViewController: KolodaViewDataSource {
     // MARK: - KolodaViewDataSource Methods
 
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return 0
+        return homeVM.numberOfCards()
     }
 
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
