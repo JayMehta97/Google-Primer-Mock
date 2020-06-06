@@ -6,6 +6,7 @@ target 'Google Primer Mock' do
   use_frameworks!
 
   # Pods for Google Primer Mock
+  pod 'SwiftLint'
 
   target 'Google Primer MockTests' do
     inherit! :search_paths

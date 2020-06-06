@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A38B2267F41429CEC3EE312D /* Pods_Google_Primer_MockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E775D1A048C3377ED3290F4 /* Pods_Google_Primer_MockTests.framework */; };
 		E5C28B4A248BD9910058E01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B49248BD9910058E01D /* AppDelegate.swift */; };
 		E5C28B4C248BD9910058E01D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B4B248BD9910058E01D /* SceneDelegate.swift */; };
 		E5C28B4E248BD9910058E01D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B4D248BD9910058E01D /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		E5C28B56248BD9930058E01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B54248BD9930058E01D /* LaunchScreen.storyboard */; };
 		E5C28B61248BD9930058E01D /* Google_Primer_MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C28B60248BD9930058E01D /* Google_Primer_MockTests.swift */; };
 		E5C28B71248BDB390058E01D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5C28B70248BDB390058E01D /* Default-568h@2x.png */; };
+		EC37CB8BCF90A387F8A8EB81 /* Pods_Google_Primer_Mock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E775D1A048C3377ED3290F4 /* Pods_Google_Primer_MockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Primer_MockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12933BEEDF0747169E884CF0 /* Pods-Google Primer Mock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Primer Mock.debug.xcconfig"; path = "Target Support Files/Pods-Google Primer Mock/Pods-Google Primer Mock.debug.xcconfig"; sourceTree = "<group>"; };
+		286535F33515330FA1748C6D /* Pods-Google Primer Mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Primer Mock.release.xcconfig"; path = "Target Support Files/Pods-Google Primer Mock/Pods-Google Primer Mock.release.xcconfig"; sourceTree = "<group>"; };
+		50D1E579A41B2060A68B2AA3 /* Pods-Google Primer MockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Primer MockTests.release.xcconfig"; path = "Target Support Files/Pods-Google Primer MockTests/Pods-Google Primer MockTests.release.xcconfig"; sourceTree = "<group>"; };
+		7ADA90329AEF119C223DB252 /* Pods-Google Primer MockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google Primer MockTests.debug.xcconfig"; path = "Target Support Files/Pods-Google Primer MockTests/Pods-Google Primer MockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Primer_Mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C28B46248BD9910058E01D /* Google Primer Mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google Primer Mock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C28B49248BD9910058E01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C28B4B248BD9910058E01D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC37CB8BCF90A387F8A8EB81 /* Pods_Google_Primer_Mock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38B2267F41429CEC3EE312D /* Pods_Google_Primer_MockTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C27B29757ABFC978A6C7D1FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F3DAEE1B23D0FFA3521B3F /* Pods_Google_Primer_Mock.framework */,
+				0E775D1A048C3377ED3290F4 /* Pods_Google_Primer_MockTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5C28B3D248BD9910058E01D = {
 			isa = PBXGroup;
 			children = (
 				E5C28B48248BD9910058E01D /* Google Primer Mock */,
 				E5C28B5F248BD9930058E01D /* Google Primer MockTests */,
 				E5C28B47248BD9910058E01D /* Products */,
+				ED2B045836E4C27AF48501BA /* Pods */,
+				C27B29757ABFC978A6C7D1FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +163,18 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		ED2B045836E4C27AF48501BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12933BEEDF0747169E884CF0 /* Pods-Google Primer Mock.debug.xcconfig */,
+				286535F33515330FA1748C6D /* Pods-Google Primer Mock.release.xcconfig */,
+				7ADA90329AEF119C223DB252 /* Pods-Google Primer MockTests.debug.xcconfig */,
+				50D1E579A41B2060A68B2AA3 /* Pods-Google Primer MockTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5C28B65248BD9930058E01D /* Build configuration list for PBXNativeTarget "Google Primer Mock" */;
 			buildPhases = (
+				30376A14AF73B1CCD6C32CBE /* [CP] Check Pods Manifest.lock */,
 				E5C28B42248BD9910058E01D /* Sources */,
 				E5C28B43248BD9910058E01D /* Frameworks */,
 				E5C28B44248BD9910058E01D /* Resources */,
@@ -166,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5C28B68248BD9930058E01D /* Build configuration list for PBXNativeTarget "Google Primer MockTests" */;
 			buildPhases = (
+				64DB55B941CEA3C3DC496B57 /* [CP] Check Pods Manifest.lock */,
 				E5C28B58248BD9930058E01D /* Sources */,
 				E5C28B59248BD9930058E01D /* Frameworks */,
 				E5C28B5A248BD9930058E01D /* Resources */,
@@ -238,6 +273,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30376A14AF73B1CCD6C32CBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Google Primer Mock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64DB55B941CEA3C3DC496B57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Google Primer MockTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5C28B42248BD9910058E01D /* Sources */ = {
@@ -404,6 +486,7 @@
 		};
 		E5C28B66248BD9930058E01D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12933BEEDF0747169E884CF0 /* Pods-Google Primer Mock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +505,7 @@
 		};
 		E5C28B67248BD9930058E01D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286535F33515330FA1748C6D /* Pods-Google Primer Mock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +524,7 @@
 		};
 		E5C28B69248BD9930058E01D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADA90329AEF119C223DB252 /* Pods-Google Primer MockTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +547,7 @@
 		};
 		E5C28B6A248BD9930058E01D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D1E579A41B2060A68B2AA3 /* Pods-Google Primer MockTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
