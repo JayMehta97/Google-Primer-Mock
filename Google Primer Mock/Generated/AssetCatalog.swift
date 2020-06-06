@@ -18,6 +18,9 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal static let leftArrow = ImageAsset(name: "left-arrow")
+  internal static let restart = ImageAsset(name: "restart")
+  internal static let rightArrow = ImageAsset(name: "right-arrow")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

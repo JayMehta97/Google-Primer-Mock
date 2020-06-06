@@ -15,33 +15,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wK-5L-veL">
-                                <rect key="frame" x="30" y="50" width="54" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wK-5L-veL">
+                                <rect key="frame" x="32" y="59" width="31" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="85W-J4-KCu"/>
+                                    <constraint firstAttribute="height" constant="31" id="DEd-DS-QHL"/>
+                                </constraints>
+                                <state key="normal" image="restart"/>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdS-Yk-ab9">
-                                <rect key="frame" x="63" y="815" width="289" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs8-ya-KnP">
+                                <rect key="frame" x="35" y="817" width="32" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Ybf-Je-Ryw"/>
+                                    <constraint firstAttribute="height" constant="35" id="mKj-SX-YXT"/>
+                                </constraints>
+                                <state key="normal" image="left-arrow"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-dQ-GT1">
+                                <rect key="frame" x="30" y="209.5" width="354" height="477"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LMA-dQ-GT1" secondAttribute="height" multiplier="118:159" id="mSO-zb-aou"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs8-ya-KnP">
-                                <rect key="frame" x="30" y="815" width="33" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3K-Zk-VyA">
-                                <rect key="frame" x="351" y="815" width="33" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-dQ-GT1">
-                                <rect key="frame" x="30" y="210" width="354" height="477"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdS-Yk-ab9">
+                                <rect key="frame" x="111" y="817" width="197" height="35"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Kp9-KT-MZd"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIQ-Y2-089">
+                                <rect key="frame" x="352" y="817" width="32" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="nUq-sy-2gn"/>
+                                    <constraint firstAttribute="height" constant="35" id="v01-Vm-Imp"/>
+                                </constraints>
+                                <state key="normal" image="right-arrow"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.2797689438" green="0.62092328070000002" blue="0.52548283340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LIQ-Y2-089" secondAttribute="trailing" constant="30" id="2Pw-Nb-FR2"/>
+                            <constraint firstItem="xs8-ya-KnP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="BHh-ay-1ZS"/>
+                            <constraint firstItem="xs8-ya-KnP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="CiT-Xb-iP3"/>
+                            <constraint firstItem="YdS-Yk-ab9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="HSI-Fc-X8R"/>
+                            <constraint firstItem="5wK-5L-veL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="KRb-bf-pm5"/>
+                            <constraint firstItem="LIQ-Y2-089" firstAttribute="leading" secondItem="YdS-Yk-ab9" secondAttribute="trailing" constant="44" id="asA-kw-PcE"/>
+                            <constraint firstItem="LMA-dQ-GT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eoW-jV-qkn"/>
+                            <constraint firstItem="LMA-dQ-GT1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g4z-Io-HDc"/>
+                            <constraint firstItem="5wK-5L-veL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="mRS-ev-PKB"/>
+                            <constraint firstItem="YdS-Yk-ab9" firstAttribute="leading" secondItem="xs8-ya-KnP" secondAttribute="trailing" constant="44" id="twj-t2-7q2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LMA-dQ-GT1" secondAttribute="trailing" constant="30" id="wgh-Hj-ora"/>
+                            <constraint firstItem="LIQ-Y2-089" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="zaq-FG-XF5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -50,4 +77,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="left-arrow" width="96" height="96"/>
+        <image name="restart" width="50" height="50"/>
+        <image name="right-arrow" width="96" height="96"/>
+    </resources>
 </document>
