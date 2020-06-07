@@ -3,9 +3,9 @@
 Google Primer Mock app for iOS platform.
 
 Architecture :- MVVM  
-IDE :- Xcode 11
-Language :- Swift 5
-Design :- Inspired by android Google Primer App
+IDE :- Xcode 11  
+Language :- Swift 5  
+Design :- Inspired by android Google Primer App  
 
 # Functionality Walkthrough
 
