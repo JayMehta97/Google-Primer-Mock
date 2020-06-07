@@ -28,4 +28,16 @@ class HomeViewModel {
         }
         return nil
     }
+
+    func getCardDetails(onCompletion complete: @escaping () -> Void) {
+        NetworkService.request(router: .getCardDetails) { (result: Result<CardFeed, Error>) in
+            switch result {
+            case .success(let cards):
+                self.cards = cards.cards
+            case .failure:
+                print(result)
+            }
+            complete()
+        }
+    }
 }

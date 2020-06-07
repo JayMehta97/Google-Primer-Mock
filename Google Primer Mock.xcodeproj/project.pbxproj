@@ -11,6 +11,10 @@
 		E553E234248C38D80019A9FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E233248C38D80019A9FE /* HomeViewModel.swift */; };
 		E553E237248C39EC0019A9FE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E236248C39EC0019A9FE /* Card.swift */; };
 		E553E239248C3ED30019A9FE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E238248C3ED30019A9FE /* CardView.swift */; };
+		E553E23D248CD3000019A9FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E23C248CD3000019A9FE /* Router.swift */; };
+		E553E23F248CD4990019A9FE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E23E248CD4990019A9FE /* NetworkService.swift */; };
+		E553E241248CEFD10019A9FE /* Google_Primer_Mock_NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E240248CEFD10019A9FE /* Google_Primer_Mock_NetworkTests.swift */; };
+		E553E243248CF3080019A9FE /* CardFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553E242248CF3080019A9FE /* CardFeed.swift */; };
 		E5671D0D248C28F5009676A3 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D06248C28F5009676A3 /* DraggableCardView.swift */; };
 		E5671D0E248C28F5009676A3 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D07248C28F5009676A3 /* KolodaView.swift */; };
 		E5671D0F248C28F5009676A3 /* SwipeResultDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */; };
@@ -53,6 +57,10 @@
 		E553E233248C38D80019A9FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E553E236248C39EC0019A9FE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E553E238248C3ED30019A9FE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E553E23C248CD3000019A9FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E553E23E248CD4990019A9FE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E553E240248CEFD10019A9FE /* Google_Primer_Mock_NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google_Primer_Mock_NetworkTests.swift; sourceTree = "<group>"; };
+		E553E242248CF3080019A9FE /* CardFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFeed.swift; sourceTree = "<group>"; };
 		E5671D06248C28F5009676A3 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 		E5671D07248C28F5009676A3 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
 		E5671D08248C28F5009676A3 /* SwipeResultDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeResultDirection.swift; sourceTree = "<group>"; };
@@ -119,8 +127,26 @@
 			isa = PBXGroup;
 			children = (
 				E553E236248C39EC0019A9FE /* Card.swift */,
+				E553E242248CF3080019A9FE /* CardFeed.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E553E23A248CD17A0019A9FE /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				E553E23B248CD2E30019A9FE /* Network Store */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		E553E23B248CD2E30019A9FE /* Network Store */ = {
+			isa = PBXGroup;
+			children = (
+				E553E23C248CD3000019A9FE /* Router.swift */,
+				E553E23E248CD4990019A9FE /* NetworkService.swift */,
+			);
+			path = "Network Store";
 			sourceTree = "<group>";
 		};
 		E5671D04248C27D6009676A3 /* Frameworks */ = {
@@ -168,6 +194,7 @@
 		E5C28B48248BD9910058E01D /* Google Primer Mock */ = {
 			isa = PBXGroup;
 			children = (
+				E553E23A248CD17A0019A9FE /* Stores */,
 				E553E235248C395A0019A9FE /* Models */,
 				E553E232248C38C80019A9FE /* ViewModels */,
 				E5671D04248C27D6009676A3 /* Frameworks */,
@@ -185,6 +212,7 @@
 			children = (
 				E5C28B60248BD9930058E01D /* Google_Primer_MockTests.swift */,
 				E5C28B62248BD9930058E01D /* Info.plist */,
+				E553E240248CEFD10019A9FE /* Google_Primer_Mock_NetworkTests.swift */,
 			);
 			path = "Google Primer MockTests";
 			sourceTree = "<group>";
@@ -473,10 +501,13 @@
 				E5671D10248C28F5009676A3 /* OverlayView.swift in Sources */,
 				E553E237248C39EC0019A9FE /* Card.swift in Sources */,
 				E5E14DCD248BEEBF000931F5 /* AssetCatalog.swift in Sources */,
+				E553E23D248CD3000019A9FE /* Router.swift in Sources */,
 				E5671D0E248C28F5009676A3 /* KolodaView.swift in Sources */,
 				E5671D0F248C28F5009676A3 /* SwipeResultDirection.swift in Sources */,
+				E553E23F248CD4990019A9FE /* NetworkService.swift in Sources */,
 				E553E234248C38D80019A9FE /* HomeViewModel.swift in Sources */,
 				E5C28B4E248BD9910058E01D /* HomeViewController.swift in Sources */,
+				E553E243248CF3080019A9FE /* CardFeed.swift in Sources */,
 				E5C28B4A248BD9910058E01D /* AppDelegate.swift in Sources */,
 				E5671D13248C28F5009676A3 /* KolodaViewAnimatior.swift in Sources */,
 				E5C28B4C248BD9910058E01D /* SceneDelegate.swift in Sources */,
@@ -487,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E553E241248CEFD10019A9FE /* Google_Primer_Mock_NetworkTests.swift in Sources */,
 				E5C28B61248BD9930058E01D /* Google_Primer_MockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
