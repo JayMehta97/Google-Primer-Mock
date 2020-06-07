@@ -35,6 +35,7 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         cardsKolodaView.dataSource = self
+        getCardDetails()
     }
 
     // MARK: - User interaction methods
@@ -68,5 +69,16 @@ extension HomeViewController: KolodaViewDataSource {
         cardView.setCardData(fromCard: card)
         return cardView
     }
+}
 
+extension HomeViewController {
+    // MARK: - Card data Methods
+
+    private func getCardDetails() {
+        homeVM.getCardDetails {
+            DispatchQueue.main.async {
+                self.cardsKolodaView.reloadData()
+            }
+        }
+    }
 }

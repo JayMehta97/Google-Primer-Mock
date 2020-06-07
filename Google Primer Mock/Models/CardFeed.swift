@@ -1,5 +1,5 @@
 //
-//  Card.swift
+//  CardFeed.swift
 //  Google Primer Mock
 //
 //  Created by Jay Mehta on 07/06/20.
@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct Card: Codable {
-    let id: String
-    let text: String
+struct CardFeed: Codable {
+    let cards: [Card]
+
+    enum CodingKeys: String, CodingKey {
+        case cards = "data"
+    }
 }
