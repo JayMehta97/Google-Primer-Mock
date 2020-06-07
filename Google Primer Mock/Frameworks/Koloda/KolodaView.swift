@@ -53,6 +53,7 @@ public protocol KolodaViewDelegate: class {
     func koloda(_ koloda: KolodaView, revertDirectionsForIndex index: Int) -> [SwipeResultDirection]
     func koloda(_ koloda: KolodaView, shouldSwipeCardAt index: Int, in direction: SwipeResultDirection) -> Bool
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection)
+    func koloda(_ koloda: KolodaView, didRevertCardAt index: Int, in direction: SwipeResultDirection?)
     func kolodaDidRunOutOfCards(_ koloda: KolodaView)
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int)
     func kolodaShouldApplyAppearAnimation(_ koloda: KolodaView) -> Bool
@@ -75,6 +76,7 @@ public extension KolodaViewDelegate {
     func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] { return [.left, .right] }
     func koloda(_ koloda: KolodaView, revertDirectionsForIndex index: Int) -> [SwipeResultDirection] { return [] }
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {}
+    func koloda(_ koloda: KolodaView, didRevertCardAt index: Int, in direction: SwipeResultDirection?) {}
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {}
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {}
     func kolodaShouldApplyAppearAnimation(_ koloda: KolodaView) -> Bool { return true }
@@ -565,6 +567,8 @@ open class KolodaView: UIView, DraggableCardDelegate {
                 completion: nil
             )
         }
+
+        delegate?.koloda(self, didRevertCardAt: currentCardIndex + 1, in: direction)
     }
 
     private func loadMissingCards(_ missingCardsCount: Int) {

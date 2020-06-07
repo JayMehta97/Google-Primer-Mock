@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Google Primer Mock/Pods-Google Primer Mock-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FlexiblePageControl/FlexiblePageControl.framework
 ${BUILT_PRODUCTS_DIR}/pop/pop.framework
