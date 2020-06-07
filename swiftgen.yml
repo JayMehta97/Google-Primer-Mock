@@ -1,0 +1,6 @@
+xcassets:
+    inputs:
+      - Google Primer Mock/Resources/Assets.xcassets
+    outputs:
+      - templateName: swift4
+        output: Google Primer Mock/Generated/AssetCatalog.swift
