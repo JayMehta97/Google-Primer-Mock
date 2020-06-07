@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Google_Primer_Mock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wK-5L-veL">
-                                <rect key="frame" x="32" y="15" width="31" height="31"/>
+                                <rect key="frame" x="32" y="59" width="31" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="31" id="85W-J4-KCu"/>
                                     <constraint firstAttribute="height" constant="31" id="DEd-DS-QHL"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs8-ya-KnP">
-                                <rect key="frame" x="35" y="523" width="32" height="35"/>
+                                <rect key="frame" x="35" y="817" width="32" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="Ybf-Je-Ryw"/>
                                     <constraint firstAttribute="height" constant="35" id="mKj-SX-YXT"/>
@@ -38,21 +38,21 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMA-dQ-GT1" customClass="KolodaView" customModule="Google_Primer_Mock" customModuleProvider="target">
-                                <rect key="frame" x="30" y="131" width="260" height="306"/>
+                                <rect key="frame" x="30" y="239.5" width="354" height="417"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LMA-dQ-GT1" secondAttribute="height" multiplier="118:139" id="mSO-zb-aou"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdS-Yk-ab9">
-                                <rect key="frame" x="111" y="523" width="103" height="35"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdS-Yk-ab9" customClass="FlexiblePageControl" customModule="FlexiblePageControl">
+                                <rect key="frame" x="111" y="817" width="197" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Kp9-KT-MZd"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIQ-Y2-089">
-                                <rect key="frame" x="258" y="523" width="32" height="35"/>
+                                <rect key="frame" x="352" y="817" width="32" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="nUq-sy-2gn"/>
                                     <constraint firstAttribute="height" constant="35" id="v01-Vm-Imp"/>
@@ -83,7 +83,7 @@
                     <connections>
                         <outlet property="cardsKolodaView" destination="LMA-dQ-GT1" id="SUm-jR-ixU"/>
                         <outlet property="leftArrowButton" destination="xs8-ya-KnP" id="YW2-ND-hfN"/>
-                        <outlet property="pageControlView" destination="YdS-Yk-ab9" id="tYa-jQ-l4x"/>
+                        <outlet property="pageControlView" destination="YdS-Yk-ab9" id="utK-Ot-b6X"/>
                         <outlet property="restartButton" destination="5wK-5L-veL" id="93S-7Z-Gsa"/>
                         <outlet property="rightArrowButton" destination="LIQ-Y2-089" id="ZTr-Yq-Rfm"/>
                     </connections>

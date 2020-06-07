@@ -1,24 +1,28 @@
 PODS:
+  - FlexiblePageControl (1.0.8)
   - pop (1.0.12)
   - SwiftGen (6.1.0)
   - SwiftLint (0.39.2)
 
 DEPENDENCIES:
+  - FlexiblePageControl
   - pop (~> 1.0)
   - SwiftGen (~> 6.0)
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - FlexiblePageControl
     - pop
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
+  FlexiblePageControl: 07f7765054f16b3f0bc3f14dfd95ab5f45817ea4
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: 598103a219564b19e6a37bec944b882517d1e391
+PODFILE CHECKSUM: 25494caf5945eb155e254b628c2deadf0760e297
 
 COCOAPODS: 1.9.1

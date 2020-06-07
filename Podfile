@@ -9,6 +9,7 @@ target 'Google Primer Mock' do
   pod 'SwiftLint'
   pod 'SwiftGen', '~> 6.0'
   pod 'pop', '~> 1.0'
+  pod 'FlexiblePageControl'
 
   target 'Google Primer MockTests' do
     inherit! :search_paths
