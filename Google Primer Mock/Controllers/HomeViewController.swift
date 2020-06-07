@@ -35,6 +35,9 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         cardsKolodaView.dataSource = self
+        cardsKolodaView.delegate = self
+
+        // Get data for card
         getCardDetails()
     }
 
@@ -45,7 +48,7 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction private func leftArrowButtonPressed(_ sender: UIButton) {
-        cardsKolodaView.revertAction()
+        cardsKolodaView.revertAction(direction: .up)
     }
 
     @IBAction private func rightArrowPressed(_ sender: UIButton) {
@@ -68,6 +71,18 @@ extension HomeViewController: KolodaViewDataSource {
         let cardView = CardView(withFrame: cardsKolodaView.frame)
         cardView.setCardData(fromCard: card)
         return cardView
+    }
+}
+
+extension HomeViewController: KolodaViewDelegate {
+    // MARK: - KolodaViewDelegate Methods
+
+    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+        return [.up, .left, .right, .topLeft, .topRight, .down]
+    }
+
+    func koloda(_ koloda: KolodaView, revertDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+        return [.down, .bottomLeft, .bottomRight]
     }
 }
 
