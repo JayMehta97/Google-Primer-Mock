@@ -61,7 +61,12 @@ extension HomeViewController: KolodaViewDataSource {
     }
 
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        return UIView()
+        guard let card = homeVM.card(forIndex: index) else {
+            return UIView()
+        }
+        let cardView = CardView(withFrame: cardsKolodaView.frame)
+        cardView.setCardData(fromCard: card)
+        return cardView
     }
 
 }
