@@ -11,29 +11,29 @@ Design :- Inspired by android Google Primer App
 
 The application performs very simple functionality of showing user bite-sized data in swipeable cards.
 
-![](Assets/swipe-demo.gif)
+![](assets/swipe-demo.gif)
 
 On launch, app performs a network request to fetch bite-sized card data. Once card data is received app populates the cards and displays them. App also sets up the page control view to track progress of cards and card navigation arrow keys.
 
-![](Assets/load-demo.gif)
+![](assets/load-demo.gif)
 
 Once this setup is done, user can drag and move around the card in any direction. When the card is dragged to the any edge of the screen then that card gets discarded in that direction.
 
-![](Assets/drag-demo.gif)
+![](assets/drag-demo.gif)
 
 To revert or go to the previous card, user can perform swipe down gesture on the card. If the intial drag of the card is in bottom direction then it is supposed as revert action. But if the inital drag direction was not in bottom then user can move around the card even taking it to the bottom edge of the screen and discard it. The App decides on the initial drag direction whether the user wants to drag and discard or revert card. Google Primer Android App provides the same behaviour.
 
-![](Assets/revert-demo.gif)
+![](assets/revert-demo.gif)
 
 Cards can also be navigated through the left and right arrow buttons.
 
-![](Assets/arrow-keys-demo.gif)
+![](assets/arrow-keys-demo.gif)
 
 The bottom page control view shows the current progress.
 
 The restart botton resets everything and allows user to start from the beginning.
 
-![](Assets/restart-demo.gif)
+![](assets/restart-demo.gif)
 
 # Building and Running
 
